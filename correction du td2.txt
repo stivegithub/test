@@ -1,0 +1,62 @@
+                                                           mercredi 16 novembre 2022
+
+
+                                   correction du td 2 de base de donnée avancée
+
+                  
+                          exercice 1
+
+  1-c                      6-b      10-b
+  2-b                               11-
+  3-b                     7-a       12-b
+  4-                      8-a       13-b
+  5-b                     9-b
+
+
+NB: le serveur de donnée stocke juste les données, tandis que le serveur de traitement gere les traitements lors de l'arrivée des requetes.
+ 
+l'entrelancement : c'est le fait que pour deux transactions T1 et T2, telque : T1=R(A)W(B)W(A) ; T2=R(B)W(A)W(C)
+
+H = T1 U T2 : R(A)W(B)W(A)R(B)W(B)W(C) mais pas forcement ca peut egalement etre: R(A)R(B)W(C).... donc en clair l'ordre n'est pas vraiment respecté.
+  
+
+c'est quoi le rollback?: un rollback est un retour en arriere.
+
+on fait le commit quand les transactions mises ou effectuée sont valides.
+
+c'est d'abord dans la base avant d'etre enregistré dans le log, et pas le contraire. 
+
+on quitte du log pour la base , c'est quand c'est deja bon qu'on enregistre dans la base.
+
+
+                                                
+
+le journal regroupe l'etat de toutes les transactions: en cours, enregistrée, anulée , en attente.
+
+on quitte du journal vers la base.
+journal-log-base.
+
+chaque mise a jour dans l'application entraine une ecriture dans le log.
+
+tout ce qu'on fait a une trace dans le log.
+verou partagé vs verou exclusif.
+verou partagé: mettre un verou partagé  veut dire que les autres n'ont acces qu'a la lecture et non l'ecriture. et c'est lui le seul qui peut l'enlever.
+la difference entre le verou partagé et le verou multiple est que en verou partagé j'ai acces en lecture et ecriture et les autres juste en lecture. 
+tandis que dans le cas d'un verou multiple tout le monde y compris moi avons le droit en lecture et ecriture.
+
+
+
+                                                 exercice 2
+H1=W2(X)W3(Z)W2(Y
+
+
+
+
+
+
+
+
+QUELQUES COMMANDES EN LIGNE DE COMMANDE SUR LES BASES DE DONNEES.
+
+select*from clients;
+commit;

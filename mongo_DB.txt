@@ -1,0 +1,25 @@
+nom du logiciel a utiliser: 
+
+
+
+il y'aura un eposé par rapport a son tp
+
+ca parle de mongo db.
+
+j'ai eposé ce mercredi. c' est celui de monsieur sassa. ca parle du NO SQL. 
+
+TAF:
+outils
+serveurs
+enregistrement
+on va saisir les requetes
+presentation du travail et de la methode de telechargement et d'installation des differents composants
+
+
+NB: tout ca c'est pour mercredi.
+
+egalement vendredi les deux premiers groupes vont presenter leur travail sur les bases de données en reseau.
+ensuite nous allons commencer avec l'analyse de données.
+
+
+le cours est fini pour aujourd'hui:15h30. 
